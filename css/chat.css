@@ -71,12 +71,7 @@
 .message {
   display: flex;
   align-items: flex-start;
-  width: 50%;
   margin-bottom: 20px;
-}
-
-.message .message__comntent {
-  width: 80%;
 }
 
 .incoming-message {
@@ -93,20 +88,17 @@
   margin-right: 15px;
 }
 
-.message .message__content {
-  padding: 1px;
-}
-
 .message .message__bubble {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 20px;
+  font-weight: 600;
 }
 
 .incoming-message .message__author {
-  margin-top: 10px;
+  margin-top: 25px;
   display: block;
   font-weight: 600;
   font-size: 12px;
@@ -114,8 +106,12 @@
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
+  color: white;
+  background-image: linear-gradient(to right, #000428, #004e92);
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
+  color: white;
+  background-image: linear-gradient(to left, #000428, #004e92);
 }
