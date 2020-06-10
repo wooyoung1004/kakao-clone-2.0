@@ -26,3 +26,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}
